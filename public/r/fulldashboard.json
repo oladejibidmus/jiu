@@ -1,0 +1,173 @@
+{
+    "$schema": "https://ui.shadcn.com/schema/registry.json",
+    "name": "dashboard-registry",
+    "homepage": "https://tremorlabs.com",
+    "items": [
+        {
+            "name": "dashboard-overview-page",
+            "type": "registry:page",
+            "title": "Dashboard Overview Page",
+            "description": "The main overview page of the dashboard.",
+            "files": [
+                {
+                    "path": "src/app/(main)/overview/page.tsx",
+                    "type": "registry:page",
+                    "target": "app/(main)/overview/page.tsx"
+                }
+            ]
+        },
+        {
+            "name": "dashboard-details-page",
+            "type": "registry:page",
+            "title": "Dashboard Details Page",
+            "description": "The details page of the dashboard.",
+            "files": [
+                {
+                    "path": "src/app/(main)/details/page.tsx",
+                    "type": "registry:page",
+                    "target": "app/(main)/details/page.tsx"
+                }
+            ]
+        },
+        {
+            "name": "dashboard-layout",
+            "type": "registry:block",
+            "title": "Dashboard Layout",
+            "description": "The main layout component for the dashboard.",
+            "files": [
+                {
+                    "path": "src/app/(main)/layout.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/ui/navigation/MobileSidebar.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/ui/navigation/sidebar.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/ui/navigation/DropdownUserProfile.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/ui/navigation/ModalAddWorkspace.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/ui/navigation/SidebarWorkspacesDropdown.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/ui/navigation/UserProfile.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "dashboard-overview-components",
+            "type": "registry:block",
+            "title": "Dashboard Overview Components",
+            "description": "Components specific to the dashboard overview page.",
+            "files": [
+                {
+                    "path": "src/components/ui/overview/DashboardCategoryBarCard.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/ui/overview/DashboardChartCard.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/ui/overview/DashboardFilterbar.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/ui/overview/DashboardProgressBarCard.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "dashboard-details-components",
+            "type": "registry:block",
+            "title": "Dashboard Details Components",
+            "description": "Components specific to the dashboard details page.",
+            "files": [
+                {
+                    "path": "src/components/Button.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/ui/icons/ArrowAnimated.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/ui/icons/TremorPlaceholder.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "dashboard-core-components",
+            "type": "registry:block",
+            "title": "Dashboard Core Components",
+            "description": "Core UI components used across the dashboard.",
+            "files": [
+                {
+                    "path": "src/components/Badge.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/Calendar.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/DatePicker.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/Dialog.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/Dropdown.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/Drawer.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/Input.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/Label.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/LineChart.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/Popover.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/ProgressBar.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/RadioCard.tsx",
+                    "type": "registry:component"
+                },
+                {
+                    "path": "src/components/Select.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        }
+    ]
+}
