@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hello-world",
+  "type": "registry:block",
+  "title": "Hello World Component",
+  "description": "A simple hello world component for the dashboard registry.",
+  "files": [
+    {
+      "path": "registry/dashboard/hello-world/hello-world.tsx",
+      "content": "import React from 'react';\n\nexport function HelloWorld() {\n  return (\n    <div>\n      <h1>Hello World from Dashboard Registry!</h1>\n    </div>\n  );\n}\n\n",
+      "type": "registry:component"
+    }
+  ]
+}

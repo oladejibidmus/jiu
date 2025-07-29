@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "arrow-animated-icon",
+  "type": "registry:component",
+  "title": "Arrow Animated Icon",
+  "description": "An animated arrow icon component.",
+  "files": [
+    {
+      "path": "src/components/ui/icons/ArrowAnimated.tsx",
+      "content": "import { cx } from \"@/lib/utils\"\n\nexport function ArrowAnimated({\n  className,\n  ...props\n}: React.HTMLAttributes<SVGElement>) {\n  return (\n    <svg\n      className={cx(\"-mr-1 ml-1.5 stroke-[1.5px]\", className)}\n      fill=\"none\"\n      stroke=\"currentColor\"\n      width=\"11\"\n      height=\"11\"\n      viewBox=\"0 0 10 10\"\n      aria-hidden=\"true\"\n      {...props}\n    >\n      <path\n        className=\"opacity-0 transition group-hover:opacity-100\"\n        d=\"M0 5h7\"\n      />\n      <path\n        className=\"transition group-hover:translate-x-[3px]\"\n        d=\"M1 1l4 4-4 4\"\n      />\n    </svg>\n  )\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dashboard-filterbar",
+  "type": "registry:component",
+  "title": "Dashboard Filterbar",
+  "description": "A dashboard filterbar component.",
+  "files": [
+    {
+      "path": "src/components/ui/overview/DashboardFilterbar.tsx",
+      "content": "\"use client\"\n\nimport { DateRangePicker } from \"@/components/DatePicker\"\nimport { subYears } from \"date-fns\"\nimport { DateRange } from \"react-day-picker\"\n\nexport const getPeriod = (\n  dateRange: DateRange | undefined,\n): DateRange | undefined => {\n  if (!dateRange) return undefined\n  const from = dateRange.from\n  const to = dateRange.to\n  let lastYearFrom\n  let lastYearTo\n  if (from) {\n    lastYearFrom = subYears(from, 1)\n  }\n  if (to) {\n    lastYearTo = subYears(to, 1)\n  }\n  return { from: lastYearFrom, to: lastYearTo }\n}\n\ntype FilterbarProps = {\n  maxDate?: Date\n  minDate?: Date\n  selectedDates: DateRange | undefined\n  onDatesChange: (dates: DateRange | undefined) => void\n}\n\nexport function Filterbar({\n  maxDate,\n  minDate,\n  selectedDates,\n  onDatesChange,\n}: FilterbarProps) {\n  return (\n    <div className=\"w-full sm:flex sm:items-center sm:gap-2\">\n      <DateRangePicker\n        value={selectedDates}\n        onChange={onDatesChange}\n        className=\"w-full sm:w-fit\"\n        toDate={maxDate}\n        fromDate={minDate}\n        align=\"start\"\n      />\n    </div>\n  )\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

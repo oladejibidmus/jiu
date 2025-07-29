@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dashboard-details-page",
+  "type": "registry:page",
+  "title": "Dashboard Details Page",
+  "description": "The details page of the dashboard.",
+  "files": [
+    {
+      "path": "src/app/(main)/details/page.tsx",
+      "content": "import { siteConfig } from \"@/app/siteConfig\"\nimport { Button } from \"@/components/Button\"\nimport { ArrowAnimated } from \"@/components/ui/icons/ArrowAnimated\"\nimport { TremorPlaceholder } from \"@/components/ui/icons/TremorPlaceholder\"\n\nexport default function Example() {\n  return (\n    <>\n      <h1 className=\"text-lg font-semibold text-gray-900 sm:text-xl dark:text-gray-50\">\n        Details\n      </h1>\n      <div className=\"mt-4 sm:mt-6 lg:mt-10\">\n        <div className=\"my-40 flex w-full flex-col items-center justify-center\">\n          <TremorPlaceholder className=\"size-20 shrink-0\" aria-hidden=\"true\" />\n          <h2 className=\"mt-6 text-lg font-semibold sm:text-xl\">\n            Want to get the full content?\n          </h2>\n          <p className=\"mt-3 max-w-md text-center text-gray-500\">\n            Dashboard template crafted with React, Next.js and Tailwind CSS.\n            Ideal for providing analytics to your users.\n          </p>\n          <Button className=\"group mt-6\" variant=\"secondary\" asChild>\n            <a href={siteConfig.externalLink.blocks}>\n              Get full template here\n              <ArrowAnimated\n                className=\"stroke-gray-900 dark:stroke-gray-50\"\n                aria-hidden=\"true\"\n              />\n            </a>\n          </Button>\n        </div>\n      </div>\n    </>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/(main)/details/page.tsx"
+    }
+  ]
+}

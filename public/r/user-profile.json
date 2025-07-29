@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "user-profile",
+  "type": "registry:component",
+  "title": "User Profile",
+  "description": "A user profile component.",
+  "files": [
+    {
+      "path": "src/components/ui/navigation/UserProfile.tsx",
+      "content": "\"use client\"\n\nimport { Button } from \"@/components/Button\"\nimport { cx, focusRing } from \"@/lib/utils\"\nimport { RiMore2Fill } from \"@remixicon/react\"\n\nimport { DropdownUserProfile } from \"./DropdownUserProfile\"\n\nexport const UserProfileDesktop = () => {\n  return (\n    <DropdownUserProfile>\n      <Button\n        aria-label=\"User settings\"\n        variant=\"ghost\"\n        className={cx(\n          focusRing,\n          \"group flex w-full items-center justify-between rounded-md p-2 text-sm font-medium text-gray-900 hover:bg-gray-100 data-[state=open]:bg-gray-100 data-[state=open]:bg-gray-400/10 hover:dark:bg-gray-400/10\",\n        )}\n      >\n        <span className=\"flex items-center gap-3\">\n          <span\n            className=\"flex size-8 shrink-0 items-center justify-center rounded-full border border-gray-300 bg-white text-xs text-gray-700 dark:border-gray-800 dark:bg-gray-950 dark:text-gray-300\"\n            aria-hidden=\"true\"\n          >\n            ES\n          </span>\n          <span>Emma Stone</span>\n        </span>\n        <RiMore2Fill\n          className=\"size-4 shrink-0 text-gray-500 group-hover:text-gray-700 group-hover:dark:text-gray-400\"\n          aria-hidden=\"true\"\n        />\n      </Button>\n    </DropdownUserProfile>\n  )\n}\n\nexport const UserProfileMobile = () => {\n  return (\n    <DropdownUserProfile align=\"end\">\n      <Button\n        aria-label=\"User settings\"\n        variant=\"ghost\"\n        className={cx(\n          \"group flex items-center rounded-md p-1 text-sm font-medium text-gray-900 hover:bg-gray-100 data-[state=open]:bg-gray-100 data-[state=open]:bg-gray-400/10 hover:dark:bg-gray-400/10\",\n        )}\n      >\n        <span\n          className=\"flex size-7 shrink-0 items-center justify-center rounded-full border border-gray-300 bg-white text-xs text-gray-700 dark:border-gray-800 dark:bg-gray-950 dark:text-gray-300\"\n          aria-hidden=\"true\"\n        >\n          ES\n        </span>\n      </Button>\n    </DropdownUserProfile>\n  )\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}
